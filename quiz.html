@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en" style="background-color:lightblue">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizer</title>
+
+    <link rel="stylesheet" type="text/css" href="quiz.css" media="screen"></link>
+    <script src="quiz.js"></script>
+    
+</head>
+
+<body>
+    
+    <h1>Quizer</h1><br>
+    <div style="background-color: rgb(163, 163, 255); border:5px solid rgb(108, 135, 255); padding:20px; border-radius: 15px"><br>
+        <div style="border: 5px solid green; border-radius:10px; background-color:lightgreen;"><br><br><h2 id="quiz">???</h2><br><br></div>
+    <br><h2 id="timer">Timer: 0</h2><h2 id="score">Score: 0</h2><h2 id="highest_score">Highest score: 0</h2></div><br>
+    
+    <div class="container">
+    <div class="center">
+    <button onclick="start_game()" class="button" id="start_button">Click to start!</button>
+    </div></div>
+
+    <div class="container">
+    <div class="center">
+    <form> <input type = "number" class="button" id="input" value="" style="display : none; background-color:rgb(150, 255, 255); border: 5px solid rgb(0, 196, 196)"></form><br>
+    <button onclick="send_answer()" class="button" id="answer_button" style="display: none; ">Answer</button><br><br>
+    <button onclick="restart_game()" class="button" id="restart_button" style="display: none;">###Restart###</button>
+    </div></div>
+
+</body>
+
+</html>
